@@ -1,29 +1,24 @@
 # RabbitMQ Persistence Service
 
-A Spring Boot application that reads messages from a RabbitMQ queue.
+A Spring Boot application that reads messages from RabbitMQ and saves them into an H2 database.
 
-## What I have done
+## What this application does
 
-* Set up RabbitMQ configuration
-* Created a message consumer
-* Successfully receive messages from a queue
-* Added service, model, and repository layers
+This application:
 
-## What I still need to do
-
-* Connect the application to a database
-* Save received messages to the database
-* Test that messages are stored correctly
-* Add better error handling
+* Connects to RabbitMQ
+* Listens for messages from a queue
+* Receives messages using a consumer
+* Saves received messages into an H2 database
+* Uses JDBC to communicate with the database
+* Uses service and repository layers to handle data
 
 ## Tech Stack
 
 * Java
 * Spring Boot
 * RabbitMQ
+* H2 Database
+* JDBC
 * Maven
-* Spring Data JPA (in progress)
 
-## Goal
-
-The goal of this project is to learn how to build an event-driven application that consumes messages from RabbitMQ and stores them in a database.
