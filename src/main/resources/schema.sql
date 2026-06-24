@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS messages (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    content VARCHAR(255),
+    date_received TIMESTAMP
+);

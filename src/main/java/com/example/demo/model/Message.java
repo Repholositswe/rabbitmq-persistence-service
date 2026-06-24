@@ -1,15 +1,12 @@
 package com.example.demo.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
 import java.util.Date;
 
-@Entity
+
 public class Message {
 
-    @Id
+
     private long id;
     private String content;
     private Date dateReceived;
@@ -26,6 +23,10 @@ public class Message {
 
     public String getContent() {
         return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public long getId() {
